@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/4.5.2/js/bootstrap.min.js"></script>
+    <title>NuestrasBirras</title>
+    <link rel="stylesheet" href="estilohojas.css" type="text/css">
+</head>
+<body>
+<!-- Nav tabs -->
+<ul class="nav nav-tabs" id="nav1Id">
+  <li class="nav-item">
+    <a href="../index.html" class="nav-link active">HOME</a>
+  </li>
+  <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="nuestras birras.html">NUESTRAS BIRRAS Nuestra TRIVIA</a>
+      <a class="dropdown-item" href="#">Juego</a>
+      <div class="dropdown-divider"></div>
+      <a class="dropdown-item" href="#tab4Id">Action</a>
+    </div>
+  </li>
+  <li class="nav-item">
+    <a href="quienes somos.html" class="nav-link">Quienes Somos</a>
+  </li>
+  <li class="nav-item">
+    <a href="contacto.html" class="nav-link">Contacto</a>
+  </li>
+</ul>
+
+<!-- Tab panes -->
+<div class="tab-content">
+  <div class="tab-pane fade show active" id="tab1Id" role="tabpanel"></div>
+  <div class="tab-pane fade" id="tab2Id" role="tabpanel"></div>
+  <div class="tab-pane fade" id="tab3Id" role="tabpanel"></div>
+  <div class="tab-pane fade" id="tab4Id" role="tabpanel"></div>
+  <div class="tab-pane fade" id="tab5Id" role="tabpanel"></div>
+</div>
+
+<script>
+  $('#navId a').click(e => {
+    e.preventDefault();
+    $(this).tab('show');
+  });
+</script>
+  <div class="container">&nbsp;
+    <div>
+    <section>
+      <div class="row">
+    <div class="col-lg-12">
+            <p>
+             LA CARACTERISTICA DE NUESTRAS BIRRAS, ES LA MEZCLA DEL AMOR POR LA CALIDAD 
+            Y LAS MEJORES MATERIAS PRIMAS,<br> SUMADO A LA MEJOR EFERVECENCIA DE  LA CAPITAL DEL SAMBA. 
+            </p>
+          </div>
+          <div class="row"> 
+        <div id="imagen1" class="col-lg-4"> <br>
+        <img src="../img/america_ipa.jpg" alt="lata de Cerveza con diseño color verde y blando"  width="250px" height="250px">
+        </div>
+        <div id="imagen2" class="col-lg-4"> <br>
+            <img src="../img/american amber.jpg" alt="lata de cerveza con diseño color rojo y blanco" width="250px" height="250px">
+        </div>
+        <div id="imagen3" class="col-lg-4"> <br>
+            <img src="../img/benja neipa.jpg" alt="lata de cerveza con diseño verde y blanco madio cuerpo caricatura" width="250px" height="250px">
+        </div>
+      </div>
+        <div class="row">
+        <div id="imagen4" class="col-lg-4"> <br> <br>
+            <img src="../img/carpinchosession.jpg" alt="Carpincho pescando en un bote en medio del rio" width="250px" height="250px">
+        </div>
+        <div id="imagen5" class="col-lg-4"> <br> <br>
+            <img src="../img/galaxy_ipa.jpg" alt="imagen de  un astronauta sonriendo en color verde y blanco" width="250px" height="250px">
+        </div>
+        <div id="imagen6" class="col-lg-4"> <br> <br>
+            <img src="../img/rubia.jpg" alt=" lata de caricatura de chica sonriendo  color tonos de amarillo, gris y blanco" width="250px" height="250px">
+        </div>
+      </div>
+      
+      </div>
+      </div>
+    </section>
+</div>
+
+
+<div id="Trivia">
+  <div class="row"> <br> <br>
+    <div class="col-md-2"></div> 
+ <div class="col-md-8"><h2>TRIVIA BENZOINO. TE ANIMAS A PARTICIPAR?</h2></div> 
+ <div class="col-md-2"></div> <br> <br>
+</div>
+  <form>
+    <div class="row"></div>
+    <div class="col-md-4"></div>
+    <div class="col-md-3"><label for="txtNombre">¿Cuál es tu Nombre?</label></div>
+    <input type="text" name="txtNombre" id="txtNombre">
+    
+    <div class="col-md-4"></div> <br><br>
+    <div class="row">
+      <div class="col-md-4"></div>
+   <div class="col-md-3"> <label for="txtEdad">¿Cuántos años tenés?</label></div>
+    <input type="text" name="txtEdad" id="txtEdad">  
+    <div class="col-lg-1"><button type="submit" onclick="Guardar()">Enviar</button></div>
+  </div>
+  </form>
+
+</div>
+<div class="btn-group" role="group" aria-label=""> <br> <br>
+ <a href="../index.html"> <button type="button" class="btn btn-primary">VOLVER</button></a>
+  <button type="button" class="btn btn-primary">GUARDAR</button>
+ <a href="contacto.html"><button type="button" class="btn btn-primary">CONTACTO</button></a>
+</div>
+</div>
+<div class="row">
+  <div class="col-lg-4"></div>
+  <div class="col-lg-8"> <br> <br>
+<footer> Norman Ravasio Diseño Web normanravasio@gmail.com<br>
+  Diseño  Grafico Gaston Medina 2020 @gnmdiseño</footer>
+<div class="col-lg-4">
+</div>
+
+</div>
+</div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="../js/script.js"></script>
+</body>
+</html>
