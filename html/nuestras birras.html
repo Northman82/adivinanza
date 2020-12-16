@@ -10,9 +10,9 @@
 <script src="https://maxcdn.bootstrapcdn.com/4.5.2/js/bootstrap.min.js"></script>
     <title>NuestrasBirras</title>
     <link rel="stylesheet" href="estilohojas.css" type="text/css">
+    <script src="../js/script.js"></script>
 </head>
 <body>
-<!-- Nav tabs -->
 <ul class="nav nav-tabs" id="nav1Id">
   <li class="nav-item">
     <a href="../index.html" class="nav-link active">HOME</a>
@@ -34,7 +34,6 @@
   </li>
 </ul>
 
-<!-- Tab panes -->
 <div class="tab-content">
   <div class="tab-pane fade show active" id="tab1Id" role="tabpanel"></div>
   <div class="tab-pane fade" id="tab2Id" role="tabpanel"></div>
@@ -94,20 +93,16 @@
  <div class="col-md-8"><h2>TRIVIA BENZOINO. TE ANIMAS A PARTICIPAR?</h2></div> 
  <div class="col-md-2"></div> <br> <br>
 </div>
-  <form>
-    <div class="row"></div>
-    <div class="col-md-4"></div>
-    <div class="col-md-3"><label for="txtNombre">¿Cuál es tu Nombre?</label></div>
-    <input type="text" name="txtNombre" id="txtNombre">
+  
+ <label for="edad">QUE EDAD TIENES?: </label>
+    <select id="edad">
+      <option value="">--Haga una elección--</option>
+      <option value="menor">SOY MENOR DE 18 AÑOS</option>
+      <option value="justo">TENGO 18 AÑOS</option>
+      <option value="mayor">TENGO MUCHO MAS DE 18 AÑOS</option>  
+    </select>
     
-    <div class="col-md-4"></div> <br><br>
-    <div class="row">
-      <div class="col-md-4"></div>
-   <div class="col-md-3"> <label for="txtEdad">¿Cuántos años tenés?</label></div>
-    <input type="text" name="txtEdad" id="txtEdad">  
-    <div class="col-lg-1"><button type="submit" onclick="Guardar()">Enviar</button></div>
-  </div>
-  </form>
+    <p></p>
 
 </div>
 <div class="btn-group" role="group" aria-label=""> <br> <br>
