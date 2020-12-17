@@ -18,10 +18,10 @@
     <a href="../index.html" class="nav-link active">HOME</a>
   </li>
   <li class="nav-item dropdown">
-    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">BENZOINO+TRIVIA</a>
     <div class="dropdown-menu">
       <a class="dropdown-item" href="nuestras birras.html">NUESTRAS BIRRAS Nuestra TRIVIA</a>
-      <a class="dropdown-item" href="#">Juego</a>
+      <a class="dropdown-item" href="#Trivia">Nuestra Trivia</a>
       <div class="dropdown-divider"></div>
       <a class="dropdown-item" href="#tab4Id">Action</a>
     </div>
@@ -93,18 +93,38 @@
  <div class="col-md-8"><h2>TRIVIA BENZOINO. TE ANIMAS A PARTICIPAR?</h2></div> 
  <div class="col-md-2"></div> <br> <br>
 </div>
+
+
+<div id="quiz">
+ 
+  <hr style="margin-bottom: 20px">
+
+  <p id="question"></p>
   
- <label for="edad">QUE EDAD TIENES?: </label>
-    <select id="edad">
-      <option value="">--Haga una elección--</option>
-      <option value="menor">SOY MENOR DE 18 AÑOS</option>
-      <option value="justo">TENGO 18 AÑOS</option>
-      <option value="mayor">TENGO MUCHO MAS DE 18 AÑOS</option>  
-    </select>
+
     
-    <p></p>
+  <div class="buttons">
+    <div class="row">
+    <div class="col-md2"></div>
+    <div class="col-md-8">
+      <button id="btn0"><span id="choice0">Sos Menor de 18 años?</span></button>
+      <button onclick="alerta()">SI</button>
+      <br><br>
+      <button id="btn1"><span id="choice1">Tenes 18 años o mas?</span></button> <br><br>
+      <button id="btn2"><span id="choice2">Con cuantas pintas de Cerveza podes conducir?</span></button> <br><br>
+      <button id="btn3"><span id="choice3">Sos de beber con moderación?</span></button><br><br>
+  </div>
+
+  <hr style="margin-top: 50px">
+  <footer>
+      <p id="progress">Question x of y</p>
+  </footer>
+</div>
+</div>
+<div class="col-md-2"></div>
 
 </div>
+
 <div class="btn-group" role="group" aria-label=""> <br> <br>
  <a href="../index.html"> <button type="button" class="btn btn-primary">VOLVER</button></a>
   <button type="button" class="btn btn-primary">GUARDAR</button>
